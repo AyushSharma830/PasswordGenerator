@@ -33,8 +33,9 @@ function App() {
 
   return (
     <>
-      <div class="p-2 m-2 h-fit w-fit bg-gray-400">
-        <div>
+      <div class="flex-col justify-center p-2 my-72 mx-auto h-fit w-fit bg-gray-400">
+        <h1 className='text-black font-bold text-center my-3'>Password generator</h1>
+        <div class="flex justify-center m-4">
           <input type="text" placeholder="password" ref={passwordRef} class="p-1 border-black rounded " value={password} />
           <button onClick={copyPasswordToClipboard} class="bg-blue-500 hover:bg-blue-700 rounded p-1 font-bold text-white">Copy</button>
         </div>
